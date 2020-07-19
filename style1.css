@@ -146,7 +146,6 @@ body {
   background-image: url(images/Arrivalbckgrnd.jpg);
 }
 
-
 h1 {
   color: #ffffcc;
 }
@@ -157,7 +156,7 @@ h3 {
 }
 
 h4 {
-  color: #CC0044;
+  color: #cc0044;
 }
 
 i {
@@ -218,3 +217,61 @@ p {
   color: #ffffcc;
   text-align: justify;
 } */
+
+/* #informationbar {
+		position: fixed;
+		left: 0;
+		width: 100%;
+		text-indent: 20px;
+		padding: 5px 0;
+		margin-bottom: 5px;
+		background-color: lightyellow;
+		border-bottom: 1px solid black;
+		font: bold 14px Verdana;
+	}
+
+	html #informationbar { */
+/*IE6 hack*/
+/* position: absolute;
+	} */
+
+#Carousel {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* transform: translate(-25%, 10);
+		-ms-transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+ */
+}
+
+nav {
+  margin-top: 20px;
+}
+
+*/
+	/* li {
+		float: left;
+		padding-left: 15px;
+	}
+
+	em {
+		font-style: normal;
+	} */
+
+	.thumbnail:hover {
+  background-color: red;
+}
+
+/* img {
+		position: relative;
+	}mnjmk
+
+	i {
+		color: #CC0044;
+	} */
+hr {
+  background-color: white;
+  width: 100%;
+}
