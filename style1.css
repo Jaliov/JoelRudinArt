@@ -137,18 +137,15 @@ CSS for Joel Site
 } */
 .navbar {
   margin-left: auto;
-  width: 50%;
+  /* background-image: url(images/Arrivalbckgrnd.jpg); */
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 body {
   background-image: url(images/Arrivalbckgrnd.jpg);
 }
 
-ul {
-  text-align: center;
-  margin-bottom: 25px;
-}
 
 h1 {
   color: #ffffcc;
@@ -156,19 +153,22 @@ h1 {
 
 h2,
 h3 {
-  color: #99ccff;
-  font-size: normal;
+  color: #ffffcc;
+}
+
+h4 {
+  color: #CC0044;
 }
 
 i {
   color: #ffff99;
 }
 
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
-a:link {
+/* a:link {
   color: #3366cc;
   font-family: sans-serif;
 }
@@ -217,4 +217,4 @@ a:active {
 p {
   color: #ffffcc;
   text-align: justify;
-}
+} */

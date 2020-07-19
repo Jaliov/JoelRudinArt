@@ -102,9 +102,11 @@
     width: 70%;
     float: left;
     text-align: left;
+    padding-top: 3px;
 }
 
 #imageData #caption {
+    color: white;
     font-weight: bold;
 }
 
