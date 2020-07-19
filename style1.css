@@ -2,139 +2,7 @@
 CSS for Joel Site
 */
 
-/* #lightbox {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    text-align: center;
-    line-height: 0;
-}
 
-#lightbox img {
-    width: auto;
-    height: auto;
-}
-
-#lightbox a img {
-    border: none;
-}
-
-#outerImageContainer {
-    position: relative;
-    background-color: #CCCCCC;
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-}
-
-#imageContainer {
-    padding: 8px;
-}
-
-#loading {
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    height: 25%;
-    width: 100%;
-    text-align: center;
-    line-height: 0;
-}
-
-#hoverNav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-}
-
-#imageContainer>#hoverNav {
-    left: 0;
-}
-
-#hoverNav a {
-    outline: none;
-}
-
-#prevLink,
-#nextLink {
-    width: 49%;
-    height: 100%;
-    background-image: url(data:image/gif;base64,AAAA);
-    /* Trick IE into showing hover 
-    display: block;
-}
-
-#prevLink {
-    left: 0;
-    float: left;
-}
-
-#nextLink {
-    right: 0;
-    float: right;
-}
-
-#prevLink:hover,
-#prevLink:visited:hover {
-    background: url(images/prevlabel.gif) left 30% no-repeat;
-}
-
-#nextLink:hover,
-#nextLink:visited:hover {
-    background: url(images/nextlabel.gif) right 30% no-repeat;
-}
-
-#imageDataContainer {
-    font: 12px Verdana, Helvetica, sans-serif;
-    background-color: none;
-    margin: 0 auto;
-    line-height: 1.4em;
-    overflow: auto;
-    width: 100%;
-}
-
-#imageData {
-    padding: 5px;
-    color: #FFFFCC;
-}
-
-#imageData #imageDetails {
-    width: 70%;
-    float: left;
-    text-align: left;
-}
-
-#imageData #caption {
-    font-weight: bold;
-    color: white;
-}
-
-#imageData #numberDisplay {
-    display: block;
-    clear: left;
-    padding-bottom: 1.0em;
-}
-
-#imageData #bottomNavClose {
-    width: 66px;
-    float: right;
-    padding-bottom: 0.7em;
-    outline: none;
-}
-
-#overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    width: 100%;
-    height: 500px;
-    background-image: url(images/Arrivalbckgrnddrk.jpg);
-} */
 .navbar {
   margin-left: auto;
   /* background-image: url(images/Arrivalbckgrnd.jpg); */
@@ -163,78 +31,6 @@ i {
   color: #ffff99;
 }
 
-/* a {
-  text-decoration: none;
-} */
-
-/* a:link {
-  color: #3366cc;
-  font-family: sans-serif;
-}
-
-a:visited {
-  color: #cc0044;
-}
-
-a:hover {
-  color: #ffffcc;
-  background-color: #cc0044;
-  font-size: 90%;
-}
-
-a:active {
-  color: #cc0044;
-  font-size: 120%;
-}
-
-.class1 a {
-  font-size: small;
-  margin-top: 0px;
-  color: white;
-}
-
-.class1 a:link {
-  color: white;
-  font-family: Verdana, sans-serif;
-}
-
-.class1 a:visited {
-  color: #ffffcc;
-}
-
-.class1 a:hover {
-  color: #ffffcc;
-  background-color: #3366cc;
-  font-size: 110%;
-}
-
-.class1 a:active {
-  color: #cc0044;
-  font-size: 120%;
-}
-
-p {
-  color: #ffffcc;
-  text-align: justify;
-} */
-
-/* #informationbar {
-		position: fixed;
-		left: 0;
-		width: 100%;
-		text-indent: 20px;
-		padding: 5px 0;
-		margin-bottom: 5px;
-		background-color: lightyellow;
-		border-bottom: 1px solid black;
-		font: bold 14px Verdana;
-	}
-
-	html #informationbar { */
-/*IE6 hack*/
-/* position: absolute;
-	} */
-
 #Carousel {
   width: 75%;
   margin-right: auto;
@@ -250,28 +46,94 @@ nav {
   margin-top: 20px;
 }
 
-*/
-	/* li {
-		float: left;
-		padding-left: 15px;
-	}
 
-	em {
-		font-style: normal;
-	} */
-
-	.thumbnail:hover {
+.thumbnail:hover {
   background-color: red;
 }
 
-/* img {
-		position: relative;
-	}mnjmk
-
-	i {
-		color: #CC0044;
-	} */
 hr {
   background-color: white;
   width: 100%;
+}
+
+.message {
+  margin-top: 300px;
+  font-size: small;
+  color: #CC0033;
+  font-style: bold;
+}
+
+#informationbar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-indent: 20px;
+  padding: 5px 0;
+  background-color: lightyellow;
+  border-bottom: 1px solid black;
+  font: bold 14px Verdana;
+}
+
+* html #informationbar {
+  /*IE6 hack*/
+  position: absolute;
+  /* width: expression(document.compatMode=="CSS1Compat"? document.documentElement.clientWidth+"px" : body.clientWidth+"px"); */
+}
+
+.imgContainer {
+  padding-bottom: 20px;
+}
+
+img {
+  padding-bottom: 5px;
+}
+
+.vertAdjust {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+}
+
+.horizAdjust {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  background: 0, 0, 0, 0;
+  color: #ffffcc;
+  font-weight: bold;
+}
+
+.card-body {
+  margin-bottom: 20px;
+}
+
+
+.lower {
+  margin: 70%;
+  color: black;
+}
+
+#header {
+  background-image: url(images/MorningVistaHoriz2.png);
+  background-repeat: no-repeat;
+  width: 70rem;
+}
+
+#portrait {
+  margin-right: 10px;
+  float: left;
+  position: relative;
+  border: 1px solid white;
 }
