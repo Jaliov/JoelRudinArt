@@ -14,67 +14,11 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="style1.css" rel="stylesheet" type="text/css" media="screen">
 	<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
-<script type="text/javascript">
-	/***********************************************
+<script src="script.js">
 
-* Animated Information Bar- by JavaScript Kit (www.javascriptkit.com)
-* This notice must stay intact for usage
-* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
-
-***********************************************/
-
-	function informationbar() {
-		this.displayfreq = "always"
-		this.content =
-			'<a href="javascript:informationbar.close()"><img src="close.gif" style="width: 14px; height: 14px; float: right; border: 0; margin-right: 5px" /></a>'
-	}
-
-	informationbar.prototype.setContent = function (data) {
-		this.content = this.content + data
-		document.write('<div id="informationbar" style="top: -500px">' + this.content + '</div>')
-	}
-
-	informationbar.prototype.animatetoview = function () {
-		var barinstance = this
-		if (parseInt(this.barref.style.top) < 0) {
-			this.barref.style.top = parseInt(this.barref.style.top) + 5 + "px"
-			setTimeout(function () {
-				barinstance.animatetoview()
-			}, 50)
-		} else {
-			if (document.all && !window.XMLHttpRequest)
-				this.barref.style.setExpression("top",
-					'document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px" : body.scrollTop+"px"')
-			else
-				this.barref.style.top = 0
-		}
-	}
-
-	informationbar.close = function () {
-		document.getElementById("informationbar").style.display = "none"
-		if (this.displayfreq == "session")
-			document.cookie = "infobarshown=1;path=/"
-	}
-
-	informationbar.prototype.setfrequency = function (type) {
-		this.displayfreq = type
-	}
-
-	informationbar.prototype.initialize = function () {
-		if (this.displayfreq == "session" && document.cookie.indexOf("infobarshown") == -1 || this.displayfreq ==
-			"always") {
-			this.barref = document.getElementById("informationbar")
-			this.barheight = parseInt(this.barref.offsetHeight)
-			this.barref.style.top = this.barheight * (-1) + "px"
-			this.animatetoview()
-		}
-	}
-
-	window.onunload = function () {
-		this.barref = null
-	}
 </script>
 
 <body>
@@ -114,61 +58,123 @@
 			<h3>Pastel/Mixed Media</h3>
 
 			<h4>2013 - Present</h4>
+
 			<div class="imgContainer">
-				<a href="images/Blue Twilightsmll.jpg" rel="lightbox[roadtrip]"
-					title="Blue Twilight (Pastel, acrylic)"><img src="images/Blue Twilightsmll copy.gif"
-						class="vertAdjust"></a>
-				<a href="images/Transmission.jpg" rel="lightbox[roadtrip]" title="Transmission"><img
-						src="images/Transmission copy.gif" class="vertAdjust"></a>
-				<a href="images/Morning Vista 2014smll.jpg" rel="lightbox[roadtrip]"
-					title="<em>Morning Vista</em>, Pastel, 10 x 20 inches"><img
-						src="images/Morning Vista 2014smll copy.gif" class="horizAdjust"></a>
+				<a data-fancybox="gallery" href="images/MistyTowerssmll.jpg" data-fancybox
+					data-caption="<h6><i>Misty Towers</i> 20 x 30 inches Pastel</h6>"><img
+						src="images/MistyTowerssmll.jpg" class="horizAdjust"></a>
 
-				<a href="images/Viewthroughafieldsmll.jpg" rel="lightbox[roadtrip]" title="The Field"><img
-						src="images/Viewthroughafieldsmll copy.gif" class="horizAdjust"></a>
-				<a href="images/Viewfromthe Ridge.jpg" rel="lightbox[roadtrip]" title="View from a Ridge"><img
-						src="images/Viewfromthe Ridge.gif" class="vertAdjust"></a>
-				<a href="images/Twilight Marshsmll.jpg" rel="lightbox[roadtrip]" title="Twilight Marsh"><img
-						src="images/Twilight Marshsmll copy.gif" class="horizAdjust"></a>
-				<a href="images/Radiant Naturesmll.jpg" rel="lightbox[roadtrip]" title="Radiant Nature"><img
-						src="images/Radiant Naturesmll copy.gif" class="vertAdjust"></a>
-				<a href="images/OnthePlateau2.jpg" rel="lightbox[roadtrip]" title="Out on the Plateau"><img
-						src="images/OnthePlateau2 copy.gif" class="vertAdjust"></a>
-				<a href="images/Currentssmll.jpg" rel="lightbox[roadtrip]" title="Currents"><a
-						href="images/Mystic Archessmll.jpg" rel="lightbox[roadtrip]"
-						title="Mystic Arcs watercolor, pastel"><img src="images/Mystic Archessmll copy.gif"
-							class="vertAdjust"></a>
+				<a data-fancybox="gallery" href="images\ForWeb\4_Green_OfThe_Trees.jpg" data-fancybox
+					data-caption="<h6><i>Green of the Trees</i> 15 x 30 inches Pastel</h6>"><img
+						src="images\ForWeb\4_Green_OfThe_Trees.jpg" class="horizAdjust"></a>
 
-					<a href="images/Portalssmll.jpg" rel="lightbox[roadtrip]" title="Portals"><img
-							src="images/Archwaysedit_Smll copy.gif" class="vertAdjust"></a>
-					<a href="images/InTheMomentsmll.jpg" rel="lightbox[roadtrip]" title="In the Moment"><img
-							src="images/InTheMomentsmll copy.gif" class="vertAdjust"></a>
-					<a href="images/BlueCanyonsmll.jpg" rel="lightbox[roadtrip]"
-						title="Blue Canyon (watercolor, pastel)"><img src="images/BlueCanyonsmll copy.gif"
-							class="vertAdjust"></a>
-					<a href="images/An EmergenceSmll.jpg" rel="lightbox[roadtrip]" title="Emergence"><img
-							src="images/An EmergenceSmll copy.gif" class="vertAdjust"></a>
-					<a href="images/DomesSmll.jpg" rel="lightbox[roadtrip]" title="Land of the Domes"><img
-							src="images/DomesSmll copy.gif" class="horizAdjust"></a>
-					<a href="images/Risingsmll.jpg" rel="lightbox[roadtrip]" title="Rising"><img
-							src="images/Risingsmll.gif" class="vertAdjust"></a>
-					<a href="images/MistyTowerssmll.jpg" rel="lightbox[roadtrip]" title="Towers in the Mist"
-						(Watercolor)"><img src="images/MistyTowerssmll copy.gif" class="horizAdjust"></a>
+				<a data-fancybox="gallery" href="images\ForWeb\5_Night_Field.jpg" data-fancybox
+					data-caption="<h6><i>Night Field</i> 15 x 30 inches Pastel</h6>"><img
+						src="images\ForWeb\5_Night_Field.jpg" class="horizAdjust"></a>
 
-					<a href="images/Taleofthearcsmll.jpg" rel="lightbox[roadtrip]" title="Tale of the Arc"><img
-							src="images/Taleofthearcsmll copy.gif" class="vertAdjust"></a>
-					<a href="images/SeeingtheArc.jpg" rel="lightbox[roadtrip]" title="Seeing the Arc" 2013"><img
-							src="images/SeeingtheArc copy.gif" class="vertAdjust"></a>
-					<a href="images/ReflectionsSmll.jpg" rel="lightbox[roadtrip]" title="Reflections"><img
-							src="images/ReflectionsSmll copy.gif" class="vertAdjust"></a>
-					<a href="images/SpringArrivessmll.jpg" rel="lightbox[roadtrip]" title="Spring Arrives"><img
-							src="images/SpringArrivessmll copy.gif" class="vertAdjust"></a>
-				</a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\7_Points_Unknown.jpg" data-fancybox
+					data-caption="<h6><i>Points Unknown</i> 9 X 12 inches Pastel/Mixed Media</h6>"><img
+						src="images\ForWeb\7_Points_Unknown.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Blue_Moon1.jpg" data-fancybox
+					data-caption="<h6><i>Blue Moon1</i> 5 X 7 inches Pastel</h6>"><img
+						src="images\ForWeb\Blue_Moon1.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Endless_Realm.jpg" data-fancybox
+					data-caption="<h6><i>Endless Realm</i> 9 x 12 inches Pastel</h6>"><img
+						src="images\ForWeb\Endless_Realm.jpg" class="horizAdjust"></a>
+
+
+				<a data-fancybox="gallery" href="images\ForWeb\Plateau_JoelRudin.jpg" data-fancybox
+					data-caption="<h6><i>Plateau</i> 15 x 29.5 inches Pastel/Mixed Media</h6>"><img
+						src="images\ForWeb\Plateau_JoelRudin.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\RemoteCanyon.jpg" data-fancybox
+					data-caption="<h6><i>Remote Canyon</i> 9 x 12 inches Pastel</h6>"><img
+						src="images\ForWeb\RemoteCanyon.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images/1_Morning_Vista_JoelRudin.jpg" data-fancybox
+					data-caption="<h6><i>Remote Canyon</i> 9 x 12 inches Pastel</h6>"><img
+						src="images/1_Morning_Vista_JoelRudin.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\InTheMoment2.jpg" data-fancybox
+					data-caption="<h6><i>That Moment</i> 24 x 18 inches Pastel/Mixed Media</h6>"><img
+						src="images\ForWeb\InTheMoment2.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\RetroApparition.jpg" data-fancybox
+					data-caption="<h6><i>Retro</i>  inches Pastel/Watercolor</h6>"><img
+						src="images\ForWeb\RetroApparition.jpg" class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\Twilight_Marsh.jpg" data-fancybox
+					data-caption="<h6><i>Twilight Marsh</i> Pastel</h6>"><img src="images\Twilight_Marsh.jpg"
+						class="horizAdjust"></a>
+
+
+				<a data-fancybox="gallery" href="images\ForWeb\Canyon_Red.jpg" data-fancybox
+					data-caption="<h6><i>Canyon Red</i> Pastel/Mixed Media</h6>"><img src="images\ForWeb\Canyon_Red.jpg"
+						class="horizAdjust"></a>
+
+
+				<a data-fancybox="gallery" href="images\Radiant Naturesmll.jpg" data-fancybox
+					data-caption="<h6><i>Radiant Nature</i> Pastel </h6>"><img src="images\Radiant Naturesmll.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Mystic_Arches2.jpg" data-fancybox
+					data-caption="<h6><i>Radiant Nature</i> Pastel </h6>"><img src="images\ForWeb\Mystic_Arches2.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\Currentssmll.jpg" data-fancybox
+					data-caption="<h6><i>Currents</i> Pastel </h6>"><img src="images\Currentssmll.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images/InTheMomentsmll.jpg" data-fancybox
+					data-caption="<h6><i>In the Moment</i> Pastel </h6>"><img src="images/InTheMomentsmll.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Event_2018.jpg" data-fancybox
+					data-caption="<h6><i>Event</i> --Mixed Media</h6>"><img src="images\ForWeb\Event_2018.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\Seeing_The_Arc.jpg" data-fancybox
+					data-caption="<h6><i>Arc</i> Pastel</h6>"><img src="images\Seeing_The_Arc.jpg"
+						class="horizAdjust"></a>
+
+
+				<a data-fancybox="gallery" href="images\ForWeb\Illusive_Coast.jpg" data-fancybox
+					data-caption="<h6><i>Rugged Coast</i> Mixed Media</h6>"><img src="images\ForWeb\Illusive_Coast.jpg"
+						class="horizAdjust"></a>
+
+
+				<a data-fancybox="gallery" href="images/BlueCanyonsmll.jpg" data-fancybox
+					data-caption="<h6><i>Blue Canyon</i> --Mixed Media</h6>"><img src="images/BlueCanyonsmll.jpg"
+						class="horizAdjust"></a>
+
+
+				<a data-fancybox="gallery" href="images/SpringArrives2.jpg" data-fancybox
+					data-caption="<h6><i>Spring Arrives</i> Pastel</h6>"><img src="images/SpringArrives2.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Domes2.jpg" data-fancybox
+					data-caption="<h6><i>Land of the Domes</i> --Mixed Media</h6>"><img src="images\ForWeb\Domes2.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Of Other Worlds.jpg" data-fancybox
+					data-caption="<h6><i>Other World</i> Pastel</h6>"><img src="images\ForWeb\Of Other Worlds.jpg"
+						class="horizAdjust"></a>
+
+				<a data-fancybox="gallery" href="images\ForWeb\Emergence.jpg" data-fancybox
+					data-caption="<h6><i>Emergence</i> Pastel</h6>"><img src="images\ForWeb\Emergence.jpg"
+						class="horizAdjust"></a>
+
+				<!-- <a href="images/Risingsmll.jpg" rel="lightbox[roadtrip]" title="Rising"><img src="images/Risingsmll.gif"
+						class="vertAdjust"></a> -->
+
 			</div>
 			<div>
 				<h4 margin-bottom: "-20px;">Earlier</h4>
 
-				<a href="images/Arrivalsmll.jpg" rel="lightbox[roadtrip]" title="Arrival (2010)"><img
+				<a href="images/Arrival.jpg" rel="lightbox[roadtrip]" title="Arrival (2010)"><img
 						src="images/Arrivalsmll copy.gif" class="vertAdjust"></a>
 				<a href="images/Encountersmll.jpg" rel="lightbox[roadtrip]" title="Encounter"><img
 						src="images/2vortexsmll copy.gif" class="vertAdjust"></a>
@@ -183,7 +189,7 @@
 				<a href="images/DistantMountainssmll.jpg" rel="lightbox[roadtrip]" title="Mountains Range"><img
 						src="images/Distantmountains.gif" class="horizAdjust"></a>
 				<a href="images/Beyondthemistsmll.jpg" rel="lightbox[roadtrip]" title="Beyond the Mist"><img
-						src="images/Imagesmll copy.gif" class="vertAdjust" </a> <a href="images/Zenithsmll.jpg"
+						src="images/Imagesmll copy.gif" class="vertAdjust" </a> <a href="images/Zenith.jpg"
 						rel="lightbox[roadtrip]" title="Zenith"><img src="images/Zenithsmll copy.gif"
 						class="vertAdjust"></a>
 
@@ -224,6 +230,9 @@
 	<p class="message" style="margin-left:20px;">All images Copyright Joel Rudin</p>
 	</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

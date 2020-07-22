@@ -12,6 +12,13 @@
     height: auto;
 }
 
+#lightboxImage {
+    object-fit: cover;
+    width: 320px;
+    height: 180px;
+
+}
+
 #lightbox a img {
     border: none;
 }

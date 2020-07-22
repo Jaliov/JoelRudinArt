@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style1.css">
+
+
+
     <title>Joel Rudin Art</title>
 </head>
 
@@ -35,35 +39,34 @@
             </ul>
     </nav>
     <h1>Gallery</h1>
-    <div class="container"></div>
-    <div class="row" id="imgRow">
-        <div class="column">
+    <div class="container">
 
-            <img src="images/Blue Twilightsmll.jpg" width="100" height="120" alt="Blue Twilight, 12 x 24 in"
-                onclick=" myFunction(this);" />
+        <a data-fancybox="gallery" href="images/MistyTowerssmll.jpg" data-fancybox
+            data-caption="Caption for single image"><img src="images/MistyTowerssmll copy.gif"></a>
+        <a data-fancybox="gallery" href="images/Portalssmll.jpg" data-fancybox data-caption="<i>Portals</i>"><img
+                src="images/Archwaysedit_Smll copy.gif"></a>
 
-        </div>
-        <div class="column">
-            <img src="images/Transmission.jpg" style="color:red;" alt="Transmission, 19 x 24 inches" width="100"
-                height="120" onclick="myFunction(this);">
 
-        </div>
-        <div class="column">
-            <img src="images/DomesSmll.jpg" alt="'Land of the Domes', Pastel, 19 x 24 inches" width="100" height="120"
-                onclick="myFunction(this);">
-        </div>
-        <div class="column">
+        <a href="images/MistyTowerssmll.jpg" data-toggle="lightbox">
+            <img src="images/MistyTowerssmll copy.gif" class="img-fluid" title="Greta image">
+        </a>
+
+        <a href="images/Portalssmll.jpg" rel="lightbox[roadtrip]" data-toggle="lightbox" title="Portals"><img
+                src="images/Archwaysedit_Smll copy.gif" class="img-fluid"></a>
+
+
+        <a href="images/Mystic Archessmll.jpg" rel="lightbox[roadtrip]" </a> <div class="column">
             <img src="images/MistyTowerssmll.jpg" alt="'Mystical Towers', Pastel, 19 x 24 inches" width="100"
                 height="120" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="images/Twilight Marshsmll.jpg" alt="'Twilight Marsh', Pastel, 19 x 24 inches" width="100"
-                height="120" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="images/Currentssmll.jpg" alt="'Currents', Pastel, 19 x 24 inches" width="100" height="120"
-                onclick="myFunction(this);">
-        </div>
+    </div>
+    <div class="column">
+        <img src="images/Twilight Marshsmll.jpg" alt="'Twilight Marsh', Pastel, 19 x 24 inches" width="100" height="120"
+            onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="images/Currentssmll.jpg" alt="'Currents', Pastel, 19 x 24 inches" width="100" height="120"
+            onclick="myFunction(this);">
+    </div>
     </div>
 
     <div class="row">
@@ -97,20 +100,13 @@
     </div>
     </div>
     </div>
-    <script>
-        function myFunction(imgs) {
-            // Get the expanded image
-            var expandImg = document.getElementById("expandedImg");
-            // Get the image text
-            var imgText = document.getElementById("imgtext");
-            // Use the same src in the expanded image as the image being clicked on from the grid
-            expandImg.src = imgs.src;
-            // Use the value of the alt attribute of the clickable image as text inside the expanded image
-            imgText.innerHTML = imgs.alt;
-            // Show the container element (hidden with CSS)
-            expandImg.parentElement.style.display = "block";
-        }
-    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <link rel="stylesheet" href="style1.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -120,9 +116,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-
-
-
 
 
 
