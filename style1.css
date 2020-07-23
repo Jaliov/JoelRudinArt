@@ -14,18 +14,12 @@ body {
   background-image: url(images/Arrivalbckgrnd.jpg);
 }
 
-h1 {
-  color: #ffffcc;
-}
-
+h1,
 h2,
 h3 {
   color: #ffffcc;
 }
 
-h4 {
-  color: #cc0044;
-}
 
 em,
 i {
@@ -114,10 +108,24 @@ img {
   background: 0, 0, 0, 0;
   color: #ffffcc;
   font-weight: bold;
+
 }
 
 .card-body {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.card-text {
+  background-image: url(images/Beacon_Detail2.jpg);
+  z-index: 1;
+  padding: 20px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-top: -300px;
+  text-align: center;
+
 }
 
 
@@ -137,4 +145,14 @@ img {
   float: left;
   position: relative;
   border: 1px solid white;
+}
+
+#homeNotice {
+  color: #ffffcc;
+  margin-top: 40px;
+  text-align: center;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%
 }
