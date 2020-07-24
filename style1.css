@@ -5,9 +5,8 @@ CSS for Joel Site
 
 .navbar {
   margin-left: auto;
-  /* background-image: url(images/Arrivalbckgrnd.jpg); */
   margin-right: auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 body {
@@ -16,7 +15,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: #ffffcc;
 }
 
@@ -30,11 +30,6 @@ i {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
-
-  /* transform: translate(-25%, 10);
-		-ms-transform: translate(-50%, 0);
-		-webkit-transform: translate(-50%, 0);
- */
 }
 
 nav {
@@ -108,7 +103,7 @@ img {
   background: 0, 0, 0, 0;
   color: #ffffcc;
   font-weight: bold;
-
+  background-image: url(images\MorningVistaHoriz2.png);
 }
 
 .card-body {
@@ -122,12 +117,18 @@ img {
   padding: 20px;
   opacity: 0.8;
   margin-bottom: 30px;
-  margin-left: 20px;
-  margin-top: -300px;
+  /* margin-left: 20px; */
+  margin-top: -350px;
   text-align: center;
-
+  float: none;
 }
 
+#bioBackgroundImg {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  background-image: url(images\MorningVistaHoriz2.png);
+}
 
 .lower {
   margin: 70%;
