@@ -2,7 +2,6 @@
 CSS for Joel Site
 */
 
-
 .navbar {
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +19,6 @@ h4 {
   color: #ffffcc;
 }
 
-
 em,
 i {
   color: #ffffcc;
@@ -36,7 +34,6 @@ nav {
   margin-top: 20px;
 }
 
-
 .thumbnail:hover {
   background-color: red;
 }
@@ -49,7 +46,7 @@ hr {
 .message {
   margin-top: 300px;
   font-size: small;
-  color: #CC0033;
+  color: #cc0033;
   font-style: bold;
 }
 
@@ -117,8 +114,6 @@ img {
   padding: 20px;
   opacity: 0.8;
   margin-bottom: 30px;
-  /* margin-left: 20px; */
-  margin-top: -350px;
   text-align: center;
   float: none;
 }
@@ -149,11 +144,11 @@ img {
 }
 
 #homeNotice {
-  color: #ffffcc;
-  margin-top: 40px;
+  /* color: #ffffcc; */
+  margin-top: 30px;
   text-align: center;
   width: 300px;
   margin-right: auto;
   margin-left: auto;
-  width: 50%
+  width: 50%;
 }

@@ -7,49 +7,60 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="style1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Jacques+Francois+Shadow&display=swap"
+		rel="stylesheet">
 	<title>Joel Rudin Art</title>
 </head>
+
+<style>
+	#title {
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		font-family: 'Jacques Francois Shadow', cursive;
+	}
+</style>
 
 <body onload="Carousel()">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
-					<a class="navbar-brand text-danger" href="index.html">Cosmic Visions</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="galleryJ.html">Gallery</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="joelbio.html">Artist Statement/Bio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact/Purchase</a>
-							</li>
-						</ul>
-					</div>
-
-				</nav>
+				<div class="navLoad">
+					<nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+						<a class="navbar-brand text-danger" href="galleryj.html">Joel's Gallery</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item active">
+									<a class="nav-link" href="index.html">Home <span
+											class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="galleryJ.html">Gallery</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="joelbio.html">Artist Statement/Bio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact/Purchase</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 				<hr>
 			</div>
 		</div>
-
 
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8">
 
-				<h1 style="text-align:center;margin-top:20px;margin-bottom:20px;">Welcome to Joel's Gallery</h1>
-				<h1 style="text-align:center;margin-bottom:20px;"><i style="color: #CC0044;">
-						Cosmic Visions</i></h1>
+				<h1 id="title">
+					Cosmic Visions</h1>
 
 				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 
@@ -62,17 +73,15 @@
 					</div>
 				</div>
 
-				<p id="homeNotice"> This site was created by
-					me, Joel Rudin. To see
-					more of my website
-					concepts, please visit: <br /><a href="https://boiling-beyond-86124.herokuapp.com/">Joel
-						Website Porfolio</a></p>
-
+				<p id="homeNotice" class="text-light"> This site was created by
+					me, Joel Rudin. To see more of my sites, visit: <br /><a
+						href="https://boiling-beyond-86124.herokuapp.com/">Joel
+						React Porfolio</a></p>
 				</h4>
 			</div>
 
 			<div class="row justify-content-center" style="margin-top: 60px;">
-				<embed height="20px" width="100px" src="Track 06a.mp3" AUTOSTART="true" LOOP="true" volume="10">
+				<embed height="20px" width="100px" src="Track06a.mp3" AUTOSTART="true" LOOP="true" volume="10">
 				<p class="text-light">
 					<font size="-2">Free DHTML scripts provided by <a href="http://www.dynamicdrive.com">
 							<font size="-2">www.dynamicdrive.com
@@ -82,7 +91,6 @@
 					</font>
 				</p>
 			</div>
-
 		</div>
 
 
