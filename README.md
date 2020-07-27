@@ -1,6 +1,6 @@
 # JoelRudinArt
 
-### This site is an extensive reboot of an website I first created c. 2012 as a showcase for my own work as a visual artist
+### This site is an extensive reboot of an website I first created in 2012 as a showcase for my work as a visual artist
 
 ### It has been updated with more modern technologies and for the first time made responsive for different sized devices
 
@@ -9,3 +9,5 @@
 ![](images\MorningVistaHoriz2.png)
 
 ### Created with: HTML, CSS, JavaScript, jQuery, Bootstrap, PhotoShop
+
+view site at: http://www.joelrudinart.com/
