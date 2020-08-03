@@ -10,4 +10,4 @@
 
 ### Created with: HTML, CSS, JavaScript, jQuery, Bootstrap, PhotoShop
 
-view site at: http://www.joelrudinart.com/
+view site at: https://www.joelrudinart.com/
