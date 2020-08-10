@@ -50,23 +50,6 @@ hr {
   font-style: bold;
 }
 
-#informationbar {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  text-indent: 20px;
-  padding: 5px 0;
-  background-color: lightyellow;
-  border-bottom: 1px solid black;
-  font: bold 14px Verdana;
-}
-
-* html #informationbar {
-  /*IE6 hack*/
-  position: absolute;
-  /* width: expression(document.compatMode=="CSS1Compat"? document.documentElement.clientWidth+"px" : body.clientWidth+"px"); */
-}
-
 .imgContainer {
   padding-bottom: 20px;
 }
@@ -83,13 +66,11 @@ img {
 }
 
 .card {
-  /* margin-left: auto;
-  margin-right: auto; */
   width: 100%;
   background: 0, 0, 0, 0;
   color: #ffffcc;
   font-weight: bold;
-  background-image: url(images\MorningVistaHoriz2.png);
+
 }
 
 .card-body {
@@ -105,13 +86,14 @@ img {
   margin-bottom: 30px;
   text-align: center;
   float: none;
+  margin-top: -250px;
 }
 
 #bioBackgroundImg {
   margin-right: 0px;
   margin-left: 0px;
   width: 100%;
-  background-image: url(images\MorningVistaHoriz2.png);
+  position: relative;
 }
 
 .lower {
@@ -120,7 +102,6 @@ img {
 }
 
 #header {
-  background-image: url(images/MorningVistaHoriz2.png);
   background-repeat: no-repeat;
   width: 70rem;
 }

@@ -24,7 +24,7 @@
 </style>
 
 
-<body onload="Carousel()">
+<body>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -54,6 +54,10 @@
 									style="text-align:right;margin-top:-20px;">
 									<font size="-2">Free DHTML scripts provided by dynamicdrive
 								</a>
+								<div style="margin-top:-20px;">
+									<embed id="myAudio" height="20px" width="100px" src="Track06a.mp3" AUTOSTART="true"
+										LOOP="true" volume="10"></embed>
+								</div>
 						</div>
 				</div>
 
@@ -81,10 +85,8 @@
 					</div>
 				</div>
 
-				<div style="margin-top: 60px;">
-					<embed height="20px" width="100px" src="Track06a.mp3" AUTOSTART="true" LOOP="true"
-						volume="20"></embed>
-					<p><span id="siteseal">
+				<div>
+					<p><span id="siteseal" style="float:right;">
 							<script async type="text/javascript"
 								src="https://seal.godaddy.com/getSeal?sealID=MTAgQsBjwLWEml7EHcVqoGsgQpDSXP79su3LcuCAaCxWkwbpK1FAeHzLJ0Gv">
 							</script>
@@ -102,6 +104,9 @@
 
 			</div>
 		</div>
+		<script src="script.js">
+		</script>
+
 		<script>
 			/***********************************************
 			 * Carousel Slideshow script- © Ger Versluis 2003
@@ -155,6 +160,7 @@
 				"images/Place_to_visitbrdr.jpg", "GalleryJ.html",
 				"images/Finding_itbrdr.jpg", "GalleryJ.html" // NOTE No comma after last line
 			);
+
 
 			/***************** DO NOT EDIT BELOW **********************************/
 			CW_I = new Array(Car_NoOfSides / 2 + 1);
@@ -246,6 +252,7 @@
 				C_Stppd = false
 			}
 		</script>
+
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
