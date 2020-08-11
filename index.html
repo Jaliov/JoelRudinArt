@@ -24,7 +24,8 @@
 </style>
 
 
-<body>
+<body onload="Carousel()">
+
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -54,9 +55,10 @@
 									style="text-align:right;margin-top:-20px;">
 									<font size="-2">Free DHTML scripts provided by dynamicdrive
 								</a>
-								<div style="margin-top:-20px;">
-									<embed id="myAudio" height="20px" width="100px" src="Track06a.mp3" AUTOSTART="true"
-										LOOP="true" volume="10"></embed>
+								<div>
+									<audio src="Track06a.mp3" id="audio" autoplay="autoplay"></audio>
+									<script src="script.js">
+									</script>
 								</div>
 						</div>
 				</div>
@@ -92,6 +94,7 @@
 							</script>
 						</span>
 					</p>
+
 				</div>
 				<div>
 
@@ -104,8 +107,8 @@
 
 			</div>
 		</div>
-		<script src="script.js">
-		</script>
+		<!-- <script src="script.js">
+		</script> -->
 
 		<script>
 			/***********************************************
