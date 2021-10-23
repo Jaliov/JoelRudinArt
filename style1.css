@@ -54,15 +54,17 @@ hr {
   padding-bottom: 20px;
 }
 
-img {
+/* img {
   padding-bottom: 5px;
-}
+} */
 
 .horizAdjust {
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 5px;
-  margin: 3px;
+  /* padding: 5px; */
+  margin: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .card {
@@ -70,7 +72,6 @@ img {
   background: 0, 0, 0, 0;
   color: #ffffcc;
   font-weight: bold;
-
 }
 
 .card-body {
