@@ -15,8 +15,12 @@ body {
 h1,
 h2,
 h3,
-h4, em, i {
+h4, em, i, #award {
   color: #ffffcc;
+}
+
+#award {
+  font-size: 80%;
 }
 
 #Carousel {
