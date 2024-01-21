@@ -8,7 +8,7 @@ CSS for Joel Site
   /* margin-bottom: 20px; */
 }
 
-body  {
+body {
   background-image: url(images/Arrivalbckgrnd.jpg);
 }
 
@@ -16,16 +16,19 @@ audio {
   filter: sepia(20%) saturate(30%) grayscale(1) contrast(50%) invert(12%);
   width: 100px;
   height: 20px;
- 
 }
 
-audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+audio::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel {
   background-color: rgb(245, 245, 247);
 }
 h1,
 h2,
 h3,
-h4, em, i, #award {
+h4,
+em,
+i,
+#award {
   color: #ffffcc;
 }
 
@@ -45,7 +48,7 @@ nav {
 
 .thumbnail:hover {
   background-color: red;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 hr {
@@ -62,6 +65,40 @@ hr {
 
 .imgContainer {
   padding-bottom: 20px;
+  width: 100%;
+  display: block;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /* img {
@@ -72,9 +109,22 @@ hr {
   border: 1px solid rgb(221, 221, 221);
   /* border-radius: 4px; */
   /* padding: 5px; */
-  margin: 2%;
-  width: 125px;
-  height: 125px;
+  margin: 1%;
+  width: 150px;
+  height: 150px;
+  animation-name: moveInRight;
+  animation-duration: 5s;
+}
+
+.horizAdjust-left {
+  border: 1px solid rgb(221, 221, 221);
+  /* border-radius: 4px; */
+  /* padding: 5px; */
+  margin: 1%;
+  width: 150px;
+  height: 150px;
+  animation-name: moveInLeft;
+  animation-duration: 5s;
 }
 
 .card {
