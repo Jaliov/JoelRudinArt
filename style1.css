@@ -1,7 +1,19 @@
 /*
 CSS for Joel Site
 */
+.container-gallery {
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  flex: 25%;
+  width: 50vh;
+}
 
+@media (max-width: 800px) {
+  .container-gallery {
+    flex-direction: column;
+  }
+}
 .navbar {
   margin-left: auto;
   margin-right: auto;
@@ -37,7 +49,7 @@ i,
 }
 
 #Carousel {
-  width: 75%;
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -63,11 +75,17 @@ hr {
   font-style: bold;
 }
 
-.imgContainer {
-  padding-bottom: 20px;
-  width: 100%;
-  display: block;
-}
+/* img {
+  width: 5.4rem;
+  height: 3rem;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+} */
+
+/* img:hover {
+  transform: translateZ(17.375rem);
+} */
 
 @keyframes moveInRight {
   0% {
@@ -101,30 +119,49 @@ hr {
   }
 }
 
-/* img {
-  padding-bottom: 5px;
-} */
-
-.horizAdjust {
-  border: 1px solid rgb(221, 221, 221);
-  /* border-radius: 4px; */
-  /* padding: 5px; */
-  margin: 1%;
-  width: 150px;
-  height: 150px;
-  animation-name: moveInRight;
-  animation-duration: 5s;
+.imgs-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 200px;
+  gap: 2rem;
+  justify-content: center;
+  margin: auto;
+  flex-basis: 50%;
 }
 
-.horizAdjust-left {
-  border: 1px solid rgb(221, 221, 221);
+/* .imgs-parent > * {
+  flex: 1 1 160px;
+} */
+.imgs-parent .horizAdjust {
+  /* transition: 0.2s; */
+  filter: brightness(0.7);
   /* border-radius: 4px; */
-  /* padding: 5px; */
-  margin: 1%;
-  width: 150px;
-  height: 150px;
-  animation-name: moveInLeft;
+
+  object-fit: cover;
+
+  /* width: 150px;
+  height: 150px; */
+  width: 5.4rem;
+  height: 8rem;
+  animation-name: moveInRight;
   animation-duration: 5s;
+
+  /* perspective: 60rem;
+} */
+}
+
+/* .horizAdjust:hover {
+  z-index: 1;
+} */
+
+.imgs-parent .horizAdjust:hover {
+  filter: brightness(1);
+  transform: perspective(200px) translateZ(2rem);
+}
+.imgs-parent .horizAdjust:active {
+  filter: brightness(1.5);
+  transform: perspective(200px) translateZ(3rem);
 }
 
 .card {
