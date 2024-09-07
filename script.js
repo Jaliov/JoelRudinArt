@@ -25,11 +25,11 @@ document.querySelector(
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Gallery
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="galleryJ.html">Recent Works</a>
-						<a class="dropdown-item" href="galleryJ_old.html">Older Works</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Cartoons, Illustrations<small>(coming soon)</small></a>
+					<div class="dropdown-menu " aria-labelledby="navbarDropdown">
+						<a class="dropdown-item text-light" href="galleryJ.html">Recent Works</a>
+						<a class="dropdown-item text-light" href="galleryJ_old.html">Older Works</a>
+						<!--<div class="dropdown-divider"></div>-->
+						<!--<a class="dropdown-item" href="#">Cartoons, Illustrations<small>(coming soon)</small></a>-->
 					</div>
 				<li class='nav-item'> <a class='nav-link' href='joelbio.html'>Artist Statement/Bio</a></li>
 				<li class="nav-item">
