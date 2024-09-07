@@ -2,20 +2,21 @@
 CSS for Joel Site
 */
 
-.navbar {
+/* .navbar {
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 20px; */
-}
+  margin-bottom: 20px;
+} */
 
 body {
   background-image: url(images/Arrivalbckgrnd.jpg);
 }
 
-audio {
+#audio {
   filter: sepia(20%) saturate(30%) grayscale(1) contrast(50%) invert(12%);
   width: 100px;
   height: 20px;
+  margin-right: 20rem;
 }
 
 audio::-webkit-media-controls-panel,
@@ -42,8 +43,10 @@ i,
   margin-left: auto;
 }
 
-nav {
-  margin-top: 20px;
+.navbar {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  margin-left: 3rem;
 }
 
 .thumbnail:hover {
@@ -69,10 +72,10 @@ hr {
   display: block;
 }
 
-.horizAdjust,
+/* .horizAdjust,
 .horizAdjust-left {
-  filter: brightness(0.7);
-}
+  filter: brightness(1);
+} */
 
 @keyframes moveInRight {
   0% {
@@ -119,6 +122,7 @@ hr {
   height: 150px;
   animation-name: moveInRight;
   animation-duration: 5s;
+  will-change: transform;
   object-fit: cover;
 }
 
@@ -130,20 +134,21 @@ hr {
   width: 150px;
   height: 150px;
   animation-name: moveInLeft;
+  will-change: transform;
   animation-duration: 5s;
   object-fit: cover;
 }
 
 .horizAdjust:hover,
 .horizAdjust-left:hover {
-  filter: brightness(1);
+  filter: brightness(0.6);
+  animation-duration: 0s;
 }
 
 .horizAdjust:active,
 .horizAdjust-left:active {
   filter: brightness(1.5);
-
-  transform: perspective(200px) translateZ(3rem);
+  animation-duration: 0s;
 }
 
 .card {
