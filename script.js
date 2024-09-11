@@ -1,7 +1,11 @@
-// window.onload = function () {
-//   //   document.getElementById("audio").play();
-//   Carousel();
-// };
+
+
+function closeWin() {
+	if (window.close()) {
+   document.getElementById("audio") = "";
+	}
+ };
+ closeWin();
 
 document.querySelector(
   ".navLoad"
