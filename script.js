@@ -1,11 +1,9 @@
-
-
-function closeWin() {
-	if (window.close()) {
-   document.getElementById("audio") = "";
-	}
- };
- closeWin();
+// function closeWin() {
+// 	if (window.close()) {
+//    document.getElementById("audio") = "";
+// 	}
+//  };
+//  closeWin();
 
 document.querySelector(
   ".navLoad"
