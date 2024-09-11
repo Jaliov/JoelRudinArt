@@ -1,10 +1,10 @@
-window.onload = function () {
-  //   document.getElementById("audio").play();
-  Carousel();
-};
+// window.onload = function () {
+//   //   document.getElementById("audio").play();
+//   Carousel();
+// };
 
 document.querySelector(
-  "#navLoad"
+  ".navLoad"
 ).innerHTML = `	<nav class='navbar navbar-expand-lg navbar-dark'>
 		<a class="navbar-brand text-danger" href='index.html'>Cosmic Visions</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

@@ -201,9 +201,9 @@ hr {
 
 #homeNotice {
   /* color: #ffffcc; */
-  margin-top: 30px;
+  margin-top: 1rem;
   text-align: center;
-  width: 300px;
+
   margin-right: auto;
   margin-left: auto;
   width: 50%;
