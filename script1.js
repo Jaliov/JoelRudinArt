@@ -11,4 +11,15 @@ document.querySelector("#imSlderLoad").innerHTML = `<div class="banner">
             <div class="item" style="--position: 10"><img src="images/Industry_web.png" alt=""> </div>
 		    <div class="item" style="--position: 4"><img src="images/Planet5.png" alt=""> </div>
         </div>
+          <div class="content">
+            	<h1 id="title">
+				Cosmic Visions</h1>
+
+            <div class="author">
+             
+               <div id="homeNotice">
+				<p class="text-light"> Art by Joel Rudin on a site built by Joel Rudin</p>
+            </div>
+       
+        </div>
     </div>`;
