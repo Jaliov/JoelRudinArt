@@ -46,7 +46,3 @@ document.querySelector(
 			</form> -->
 		</div> 
 	</nav>`;
-
-// document.querySelector(
-//   "#audio"
-// ).innerHTML = `<audio controls src='Track06a.mp3' id='audio' loop='loop' autoplay='autoplay'></audio>`;
