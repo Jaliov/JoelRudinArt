@@ -12,9 +12,10 @@ document.querySelector("#imSlderLoad").innerHTML = `<div class="banner">
 		    <div class="item" style="--position: 4"><img src="images/Planet5.png" alt=""> </div>
         </div>
           <div class="content">
-            	<h1 id="title">
+               <header>
+            	<h1 id ="title">
 				Cosmic Visions</h1>
-
+                </header>
             <div class="author">
              
                <div id="homeNotice">
