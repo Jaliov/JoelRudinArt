@@ -28,8 +28,8 @@ document.querySelector(
 						Gallery
 					</a>
 					<div class="dropdown-menu " aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-light" href="galleryJ.html">Recent Works</a>
-						<a class="dropdown-item text-light" href="galleryJ_old.html">Earlier Works</a>
+						<a class="dropdown-item " href="galleryJ.html">Recent Works</a>
+						<a class="dropdown-item " href="galleryJ_old.html">Earlier Works</a>
 						<!--<div class="dropdown-divider"></div>-->
 						<!--<a class="dropdown-item" href="#">Cartoons, Illustrations<small>(coming soon)</small></a>-->
 					</div>
