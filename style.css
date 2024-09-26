@@ -202,12 +202,13 @@ hr {
 .card-text {
   background-image: url(images/Beacon_Detail2.jpg);
   z-index: 1;
-  padding: 20px;
+  padding-bottom: 1rem;
   opacity: 0.8;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: center;
   float: none;
-  margin-top: -250px;
 }
 
 #bioBackgroundImg {
