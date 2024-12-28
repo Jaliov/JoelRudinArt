@@ -206,15 +206,19 @@ height-adjust:active {
 }
 
 .card-text {
-  background-image: url(images/Beacon_Detail2.jpg);
+  /* background-image: url(images/Beacon_Detail2.jpg); */
   z-index: 1;
   padding-bottom: 1rem;
   opacity: 0.8;
   margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  text-align: center;
+  text-align: left;
   float: none;
+}
+
+#bio {
+  margin-top: 1rem;
 }
 
 #bioBackgroundImg {
@@ -261,4 +265,7 @@ height-adjust:active {
   margin-top: 0.5rem;
   font-family: "Jacques Francois Shadow", cursive;
   z-index: 1;
+}
+li {
+  margin-left: 2rem;
 }
