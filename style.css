@@ -249,12 +249,14 @@ height-adjust:active {
   margin-right: 1rem;
   text-align: left;
   float: none;
+  animation: fadeInAnimation linear;
+  animation-timeline: view(0.5s);
 }
 
 #bio {
   margin-top: 1rem;
 
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
