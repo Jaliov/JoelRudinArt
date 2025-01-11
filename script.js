@@ -50,4 +50,4 @@ document.querySelector(
 
 document.getElementById(
   "audioLoad"
-).innerHTML = `<audio controls src='Track06a.mp3' id='audio' loop='loop' autoplay='autoplay'></audio>`;
+).innerHTML = `<audio controls src='Track06a.mp3' id='audio' autoplay='autoplay'></audio>`;
