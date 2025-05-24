@@ -103,7 +103,7 @@ hr {
 }
 
 .message {
-  margin-top: 300px;
+  /* margin-top: 300px; */
   font-size: small;
   color: #cc0033;
   font-style: bold;
